@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<h1> EX 11 </h1>
+<script type="text/javascript">
+	/*Faça um programa que receba 10 valores interos e os coloque em 
+		seguida exiba-os em ordem inversa à ordem de entrada*/ 
+		function jumpline(){
+			document.write("<br>");
+		};
+		function write(x){
+			document.write(x);
+			jumpline();
+		};
+
+	var vet = [];
+
+	for (var i = 1; i <= 10; i++) {
+		vet [i] = i ;
+	}
+
+	for (var i = 1; i <= 10; i++){
+		document.write(vet[i] + "<br>");
+	}
+
+	jumpline();
+	write("number list invert");
+	jumpline();
+
+	for (var i = 10; i >= 1;i--) {
+		write(vet[i]);
+	}
+
+</script>

@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<h1> EX 12 </h1>
+<script type="text/javascript">
+	/*
+	  Faça um programa que utilize uma estrutura de repetição para ler 50 números 
+	armazenando-os em um vetor e calcule e exiba a média aritmética deles.
+	  Em seguida o programa deve apresentar todos os valores armazenados no vetor que
+	sejam menores que a média.
+	*/ 
+		function jumpline(){
+			document.write("<br>");
+		};
+		function write(x){
+			document.write(x);
+			jumpline();
+		};
+		//valores que o exercío nos pede para emplementar
+	// var vect = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+	var vect = [];
+	var total = 0;
+	var divider = 0;
+	var average = 0;
+
+	for (var i = 0; i < vect.length; i++) {
+		total = total + vect[i];
+		divider = divider + 1;
+	};
+
+	average = total/divider;
+
+	write(total);
+	write(divider);
+	write(average);
+
+</script>
