@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<h1> EX 23 </h1>
+<script type="text/javascript">
+	/* Os exercicios seguintes deve cnter o seguinte vetor para resolução
+	var inta = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+	vectb[0] deve receber o indice do ultimo elemeto par de a ( se não houver números pares em a, a resposta deve ser -1) */
+
+	function jumpline(){
+		document.write("<br>");
+	};
+	function write(x){
+		document.write(x);
+		jumpline();
+	};
+	
+	var vecta = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+	var vectb = [];
+	var rest = 0;
+	var x = 0
+
+	for(var i = 0; i < vecta.length; i++){
+		rest = vecta[i] % 2;
+		if (rest == 0){
+			vectb[0] = i;
+		} //else{
+		//	vectb[0] = -1;
+		//};
+		x++;
+	};
+	console.log(vecta)
+	write('o ultimo indice par é ' + vectb[0]);
+
+</script>

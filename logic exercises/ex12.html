@@ -14,14 +14,18 @@
 			document.write(x);
 			jumpline();
 		};
-		//valores que o exercío nos pede para emplementar
-	// var vect = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+		function draw(){
+			return Math.round(Math.random()*10);
+		}
+
 	var vect = [];
 	var total = 0;
 	var divider = 0;
 	var average = 0;
+	console.log(vect);
 
-	for (var i = 0; i < vect.length; i++) {
+	for (var i = 0; i <= 49; i++) {
+		vect[i] = draw();
 		total = total + vect[i];
 		divider = divider + 1;
 	};
