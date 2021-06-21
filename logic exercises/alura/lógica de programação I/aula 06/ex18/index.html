@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+	function pulalinha(){
+		document.write('<br>');
+	};
+	function escreval(x) {
+		document.write(x);
+		pulalinha();
+	};
+	var numeroPensado = Math.round(Math.random()*10);
+	var chute = parseInt(prompt("digite seu chute"));
+	console.log(numeroPensado);
+	if (chute == numeroPensado){
+		escreval("voce acertou!");
+	}
+	else {
+		escreval("voce errou!");
+	};
+</script>

@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<h1> EX 04 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+var tela = document.querySelector('canvas'); 
+var pincel = tela.getContext('2d'); 
+
+pincel.fillStyle = 'white';
+pincel.fillRect(0, 0, 600, 400);
+
+function desenhaquadrado(x, y, cor){
+
+	pincel.fillStyle = cor;
+	pincel.fillRect(x, y, 50, 50);
+	pincel.filstroke = 'black';
+	pincel.strokeRect(x, y, 50, 50);
+};
+
+	desenhaquadrado(0, 0, 'green');
+	desenhaquadrado(50, 0, 'green');
+	desenhaquadrado(100, 0, 'green');
+	desenhaquadrado(150, 0, 'white');
+
+
+</script>

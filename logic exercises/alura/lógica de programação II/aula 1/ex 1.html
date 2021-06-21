@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<h1> EX 01 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+	var tela = document.querySelector('canvas'); //queryselector seleciona o <canvas> e passa como valor a variavel tela
+
+	/*ou seja o queryselctor pega o valor da tag canvas e joga ele para a variavel tela fica então como um retangulo com os valor definidos da tag*/
+	
+	var pincel = tela.getContext('2d'); //a tela que já possui tais valores e precisa ser definida em qual plano vai ser desenhado em seguida a variavel pincel recebe todos os parâmetros que foram definidos, tipo de imagem e tamanho 
+
+	pincel.fillStyle = 'lightgrey' //.fillStyle essa em questão não é uma função e sim uma proprieda ela equivale a uma varivel por indentficar a cor
+
+	pincel.fillRect(0, 0, 600, 400);/*.fillRect tendo em vista que a variavel pincel já possui alguns valores interessantes chamamos então com o operador . a função do JS que é utilizada para prencher de um ponto 0 ao 600 imaginando então em um plano cartesiano, delimitamos aonde queremos prencher com o pincel */
+
+</script>

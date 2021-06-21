@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+
+	function pulalinha(){
+
+		document.write('<br>');
+	};
+
+	function imp(x) {
+
+		document.write(x);
+		pulalinha();
+	};
+	var tent = 1;	
+	var numerop = Math.round(Math.random()*10);
+	
+	while (tent <=3 ){
+	var chut = parseInt(prompt("Digite seu chute! "));
+	if (chut == numerop){
+		imp ("você acertou!");
+		break; //o break existe aqui também :)
+	} else {
+		imp("voce errou!!! ");
+	}
+	tent++;
+}
+	imp ("o numero pensado foi " + numerop);
+</script>

@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1> EX 01 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+function DesenhaQuadrado(x, y, cor){
+
+	var tela = document.querySelector('canvas'); 
+	var pincel = tela.getContext('2d'); 
+
+	pincel.fillStyle = cor;
+	pincel.fillRect(x, y, 50, 50);
+	pincel.filstroke = 'black';
+	pincel.strokeRect(x, y, 50, 50);
+};
+
+DesenhaQuadrado(0, 0, 'blue');
+DesenhaQuadrado(50, 0, 'red');
+DesenhaQuadrado(100, 0, 'yellow');
+
+</script>

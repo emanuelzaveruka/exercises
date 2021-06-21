@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<h1>Receitas</h1>
+
+<script> 
+            //um array vazio assim, ingredientes[]
+    var ingredientes = [];
+            //aqui sera a quantidade de ingredientes que iremos adicionar
+            //3
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+            //o contador de nosso laço recebe um
+    var contador = 1;
+            //1             3
+    while( contador <= quantidade) {
+                //açucar                                        //1
+        var ingrediente = prompt("Informe o ingrediente " + contador);
+            //booleano 1 ou 0
+        var existe = false;
+
+        //aqui teremos a estrutura lógica do programa
+                    //0         //0         esse é o nosso array
+        for( var posicao = 0; posicao < ingredientes.length; posicao++) {
+                    // se array na posição 0 = açucar 
+                    //faça existe = true  
+            if( ingredientes[posicao] == ingrediente) {
+                //o existe = fica no valor true
+                existe = true;
+                //e laço for para
+                break;
+            }
+        }
+        //agora se o existe continuar no valor false
+        if( existe == false) {
+            //aqui é adicionado a variavel no vetor 
+            ingredientes.push(ingrediente);
+            //e aqui se encerra o contador
+            contador++;
+        }
+    }
+    //revisando então, nessa estrutura ela revisa o valores dentro do array
+    //ela não permite que o laço se feche enquanto não for adicionado o valor 
+    //dentro de nosso array
+    console.log(ingredientes);
+</script>

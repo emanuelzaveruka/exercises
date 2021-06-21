@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script type="text/javascript">
+	
+	function pulalinha() { //a implementção de uma function melhorando visibilidade de código
+	
+		document.write('<br>'); //assim como a function lá no pascal aqui funciona de diversas maneiras
+	
+	};
+
+	function escreval (frase){ //se eu quero que a função receba uma frase eu coloco (nome de alguma variavel)
+		document.write(frase); //e automaticamente ele escreve a variavel
+		pulalinha(); //outra funcionalidade interessante é colocar uma função dentro de outra função
+	};
+	var eu = 18;
+	var mirma = 30;
+	
+	escreval('eu tenho ' + eu + ' anos'); //escreval = frase --> document.write(frase)
+	escreval('já a minha irmã tem ' + mirma + ' anos');
+
+	var subidade = mirma - eu;
+
+	escreval('a diferença entre as nossas idade é de ' + subidade + ' anos');
+
+</script>

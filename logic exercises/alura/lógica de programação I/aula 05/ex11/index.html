@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+	function pulalinha(){
+		document.write('<br>');
+	};
+	function escreval(x) {
+		document.write(x);
+		pulalinha();
+	};
+	function calcimc(peso, altura) { //nessa função ela le as variaveis 
+		var imc = peso/(altura*altura); //e realiza o calculo
+		escreval ('o imc é: ' + Math.round(imc)); //em seguida imprime o calculo
+	};
+	calcimc(90, 1.73); //aqui é fornecido os dados que alimentam as variaveis 
+	calcimc(78, 1.71); // primeiro é o peso e o segundo a altura 
+</script>

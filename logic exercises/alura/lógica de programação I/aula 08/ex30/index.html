@@ -1,0 +1,29 @@
+<meta charset="UTF-8"> 
+<input/>
+<button> compare com o segredo </button>
+<script type="text/javascript">
+	
+	var segredo = Math.round(Math.random()*10); 
+	
+	var input = document.querySelector("input"); //o query selector pega lá no código html e introduz na variavel input fazendo com o que for digitado dentro da caixinha seja localizado na nossa variavel global
+
+	function verifica(){ //aqui realizo uma função
+
+		if (input.value == segredo){ //.value serve pra retornar o valor lá da caixinha para a nossa variavel e em seguida fazemos a comparação
+			alert("voce acertou");
+		} else {
+			alert ("voce errou");
+		}
+
+		input.value = ""; //aqui podemos não so retornar o valor como introduzir la na caixinha colocando um texto em branco
+		input.focus();//o .focus serve para dar destaque na hora em que o usuario digitar 
+	}
+
+	input.focus(); //o mesmo comando é digitado 
+
+	var button = document.querySelector("button"); //utilizando do mesmo comando citado acima mas explicando de outra forma o query.selector serve para nos selecionarmos dentro da tag html o que queremos trazer para a nossa variavel local para podermos trabalhar com ela
+
+	button.onclick = verifica; //o .onclick serve para que quando o botão for clicado execute a função que foi recebido dentro de nossa variavel local button 
+	//ou seja ele recebe toda a função verifica sem os parenteses para que ela não seja executada dentro do java e sim pelo navegador que já enterpreta ela dessa maneira verifica();
+
+</script>

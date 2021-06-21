@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+	function pulalinha(){
+		document.write('<br>');
+	};
+	function escreval(x) {
+		document.write(x);
+		pulalinha();
+	};
+	function calcimc(peso, altura) { 
+		return peso/(altura*altura);
+ 	};
+	var pessoay = calcimc(90, 1.73); 
+	var pessoax = calcimc(78, 1.71);
+	var total = pessoax + pessoay;  
+	escreval('seu imc é: ' + Math.round(pessoay));
+	escreval('seu imc é: ' + Math.round(pessoax));
+	escreval("a soma dos imc's: " + Math.round(total));
+</script>

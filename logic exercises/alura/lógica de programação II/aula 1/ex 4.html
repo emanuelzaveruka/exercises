@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<h1> EX 04 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+	var tela = document.querySelector('canvas'); 
+	var pincel = tela.getContext('2d'); 
+
+	pincel.fillStyle = 'white';
+
+	pincel.fillRect(0, 0, 600, 400);
+
+	pincel.fillStyle = 'green';
+	pincel.fillRect(0, 0, 200, 400);
+
+	pincel.fillStyle = 'red';
+	pincel.fillRect(400, 0, 200, 400);
+
+	//criando triangulo
+
+	pincel.fillStyle = 'black';
+	pincel.beginPath();
+	pincel.moveTo(300, 200);
+	pincel.lineTo(200, 400);
+	pincel.lineTo(400, 400);
+	pincel.fill();
+
+	//criado circulo
+
+	pincel.fillStyle = 'black';
+	pincel.beginPath();
+	pincel.arc(300, 200, 50, 0, 2 * 3.14);
+	pincel.fill();
+
+
+</script>

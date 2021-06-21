@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<h1> Receitas </h1>
+<script type="text/javascript">
+
+  var ingredientes = [];
+        //1
+  var quantidade = parseInt(prompt("quantos ingredientes voce vai adicionar?"));
+        //1
+  var contador = 1;
+            //1         //1
+  while (contador <= quantidade){
+          //açucar                                           //1
+    var ingrediente = prompt ("informe os ingredientes" + contador);
+    //então aqui não tem nada  //e então o .push joga valor nesse array
+    ingredientes.push(ingrediente);
+    //ficando assim ingredientes[açucar,]
+    contador++;
+    //aqui finaliza o contador
+  };
+
+  console.log(ingredientes);
+
+</script>

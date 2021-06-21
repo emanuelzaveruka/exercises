@@ -1,0 +1,34 @@
+<meta charset="UTF-8"> 
+<input/>
+<button> comapare com o segredo </button>
+<script type="text/javascript">
+	
+	var segredos = [5,7,10,2];  
+
+	var input = document.querySelector("input");
+
+	function verifica(){
+		var x = false;
+		
+		for (var i = 0; i < segredos.length; i++) {
+			
+			if (input.value == segredos[i]){
+				alert ("voce acertou");
+				x = true;
+				break;
+			}; 
+		};
+
+		if(x == false){
+			alert("voce errou");
+		};
+	}
+
+		input.value = "";
+	input.focus();
+
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+</script>

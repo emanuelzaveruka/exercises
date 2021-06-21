@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+	function pulalinha(){
+		document.write('<br>');
+	};
+	function escreval(x) {
+		document.write(x);
+		pulalinha();
+	};
+	function calcimc(peso, altura) { 
+		return peso/(altura*altura);
+	};
+	var nome = prompt('informe o seu nome'); //prompt capura o valor digitado
+	var altura = prompt(nome + ' informe a altura'); //e o adiciona na variavel
+	var peso = prompt (nome + " informe seu peso");
+	var imc = calcimc(peso, altura); 
+
+	escreval(nome + ' seu imc é: ' + Math.round(imc));
+	
+	if (imc < 18.5){
+		escreval ("voce está abaixo do recomendavel");
+	};	
+	if (imc > 35){
+		escreval("voce está acima do recomendavel");
+	};
+	if (imc >= 18.5 && imc <= 35){ // a sintaxe && é "e" ela subtitui a necessicidade de um outro if 
+		escreval("seu imc está saudavel");
+	};
+</script>

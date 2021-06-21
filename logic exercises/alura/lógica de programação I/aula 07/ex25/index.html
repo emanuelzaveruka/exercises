@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+
+	function pulalinha(){
+
+		document.write('<br>');
+	};
+
+	function escreval(x) {
+
+		document.write(x);
+		pulalinha();
+	};
+
+	var login = "emanuel";
+	var senha = 123;
+	var contador = 1
+
+
+	for (var contador = 1 contador <= 3){
+
+		var logidu = prompt("digite seu nome de usuario");
+		var senhadu = parseInt(prompt("digite sua senha"));
+
+		if (login == logidu && senha == senhadu){
+			escreval("bem vindo ao sistema");
+			contador = 3;
+		}
+		else {
+			alert("senha errada tente novamente")
+			contador++; //como java é baseada em c++ podemos usar assim esse comando variavel mais variave mais um
+			//poderia ser escrito assim:
+			//contador = contador + 1;
+		
+			if (contador==4){
+			alert("tente novamente em 5 minutos");
+			}
+		}
+
+	}
+
+
+
+</script>

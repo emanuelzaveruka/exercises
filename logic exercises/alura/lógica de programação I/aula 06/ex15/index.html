@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+
+	function pulalinha(){
+		document.write('<br>');
+	};
+	function escreval(x) {
+		document.write(x);
+		pulalinha();
+	};
+
+	var vitoria = parseInt(prompt('digite o numero de vitoria'));
+	var empates = parseInt(prompt('digite o numeros de empates'));
+	var pontos = (vitoria * 3) + empates;
+
+	escreval('os pontos do seu time é: ' + pontos);
+
+</script>

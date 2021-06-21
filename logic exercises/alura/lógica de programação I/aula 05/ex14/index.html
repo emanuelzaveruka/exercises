@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+</h2> 
+<script type="text/javascript">
+	function pulalinha(){
+		document.write('<br>');
+	};
+	function escreval(x) {
+		document.write(x);
+		pulalinha();
+	};
+	function calcimc(peso, altura) { 
+		return peso/(altura*altura);
+	};
+	var nome = prompt('informe o seu nome'); //prompt capura o valor digitado
+	var altura = prompt(nome + ' informe a altura'); //e o adiciona na variavel
+	var peso = prompt (nome + " informe seu peso");
+	var imc = calcimc(peso, altura); 
+
+	escreval(nome + ' seu imc é: ' + imc);
+			
+</script>
