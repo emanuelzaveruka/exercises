@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<h1> EX 06 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+	var tela = document.querySelector('canvas'); 
+	var pincel = tela.getContext('2d');
+	var desenha = false;
+
+	pincel.fillStyle = 'grey';
+	pincel.fillRect(0, 0, 600, 400);
+
+	function pincelcirculo(evento){
+	
+		var x = evento.pageX - tela.offsetLeft;
+		var y = evento.pageY - tela.offsetTop;
+
+		if (desenha){
+		pincel.fillStyle = 'blue';
+			pincel.beginPath();
+				pincel.arc(x, y, 10, 0, 2 * 3.14);
+			pincel.fill();
+		console.log(evento);
+		};
+	};
+
+
+	tela.onmousedown = function(){ //function anonima utilizada apenas localmente não necessita de um nome
+
+		desenha = true;
+	};
+
+	tela.onmouseup = function(){
+
+		desenha = false;
+	};
+
+	tela.onmousemove = pincelcirculo;
+
+</script>

@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1> EX 01 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+	var tela = document.querySelector('canvas'); 
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'grey';
+	pincel.fillRect(0, 0, 600, 400);
+
+	function exibeAlerta(evento){ //aqui fazemos uma função que pega a resposta do navegador aonde o mouse clicou dentro do nosso canva 
+
+		alert('cliquei'); //em seguida exibe o alerta
+		console.log(evento);
+	} 
+
+	tela.onclick = exibeAlerta; // o .onclick é um evento que tudo que for atibuido nela ela fara ou seja com ela recebendo a function exibeAlerta ela ira executar essa função apartir do clique do usuario
+
+	//quando passamos a função sem abrir o parenteses ela não sera executada e sera carregada para dentro do onclick e que executara sera o navegador 
+
+	/*e como atribuimos uma variavel na nossa function o navegador passara o parametro do click dentro da function
+</script>

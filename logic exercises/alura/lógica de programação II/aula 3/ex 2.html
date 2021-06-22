@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<h1> EX 02 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+	var tela = document.querySelector('canvas'); 
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'grey';
+	pincel.fillRect(0, 0, 600, 400);
+
+	function pincelcirculo(evento){
+		var x = evento.pageX - tela.offsetLeft; //relembrando então.. nosso navegador passa os parametros para a variavel evento e o .pageX captura somente a varivel x do navegador
+		// existe um detalhe importante também o navegador calcula a cordenada da tela inteira no navegador e então subtraimos o pageX com a variavel tela com o offsetleft para retirar essa margem de erro
+		var y = evento.pageY - tela.offsetTop;
+		//o mesmo vale para a cordenada Y 
+		pincel.fillStyle = 'blue';
+		pincel.beginPath();
+		pincel.arc(x, y, 10, 0, 2 * 3.14);
+		pincel.fill();
+		console.log(evento);
+	};
+
+	tela.onclick = pincelcirculo; 
+</script>
