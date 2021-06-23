@@ -1,0 +1,73 @@
+<meta charset="utf-8">
+<h1> EX 05 </h1>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    function atualizaTela() {
+
+        limpaTela();
+        desenhaCirculo(x, y, 10);
+    }
+
+  function bandeirabrasil(){
+  
+  pincel.fillStyle = 'green';
+  pincel.fillRect(0, 0, 600, 400);
+  pincel.fillStyle = 'yellow';
+  pincel.beginPath();
+  pincel.moveTo(50, 200);
+  pincel.lineTo(300, 50);
+  pincel.lineTo(550, 200);
+  pincel.fill();
+
+  pincel.beginPath();
+  pincel.moveTo(50, 200);
+  pincel.lineTo(300, 350);
+  pincel.lineTo(550, 200);
+  pincel.fill();
+
+  pincel.fillStyle = 'darkblue';
+  pincel.beginPath();
+  pincel.arc(300, 200, 100, 0, 2 * 3.14);
+  pincel.fill();
+
+  };
+
+  function bandeiraitalia(){
+  
+  pincel.fillStyle = 'white';
+  pincel.fillRect(0, 0, 600, 400);
+
+  pincel.fillStyle = 'green';
+  pincel.fillRect(0, 0, 200, 400);
+
+  pincel.fillStyle = 'red';
+  pincel.fillRect(400, 0, 200, 400);
+
+  };
+
+  var x = true;
+
+  function atualizaTela() {
+
+    if(x) {
+      bandeiraitalia();
+    } else {
+      bandeirabrasil();
+    }; 
+    x = !x; //! inverte o valor lógico de nossa variavel
+  };
+
+  setInterval(atualizaTela,2000);
+</script>

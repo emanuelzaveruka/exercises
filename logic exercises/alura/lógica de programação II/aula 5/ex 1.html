@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<h1> EX 01 </h1>
+
+<canvas width="600" height="400">
+	
+</canvas>
+
+<script type="text/javascript">
+
+	var tela = document.querySelector('canvas'); 
+	var pincel = tela.getContext('2d');
+    var raio = 10
+	pincel.fillStyle = 'grey';
+	pincel.fillRect(0, 0, 600, 400);
+
+	 function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    };
+
+    function limpatela(){
+
+    	pincel.clearRect(0, 0, 600, 400);
+    };
+
+    function desenhalvo(x, y){
+    
+        desenhaCirculo(x, y, raio+20, 'red');
+        desenhaCirculo(x, y, raio+10, 'white');
+        desenhaCirculo(x, y, raio, 'red');
+    };
+
+    function sorteiaPosicao(maximo){
+
+        return Math.floor(Math.random() * maximo);
+
+    }
+    function atualizatela() {
+    
+    limpatela()
+    var xAleatorio = sorteiaPosicao(600);
+    var yAleatorio = sorteiaPosicao(400);
+    desenhalvo(xAleatorio, yAleatorio);
+    
+    };
+
+    setInterval(atualizatela, 750)
+</script>
