@@ -1,0 +1,58 @@
+//ERRADO
+
+INSERT INTO aluno(nome, dt_nasc, CPF) VALUES
+	("Ana", "2004-09-01", 1123444);
+  SELECT * FROM aluno;
+
+//ERRADO
+
+  INSERT INTO `aluno`(`nome`, `dt_nasc`, `CPF`) VALUES 
+    ('[Maria]','[2008-10-02]','[1231234]'),
+        ('[Maria]','[2008-10-02]','[1231234]');
+SELECT * FROM aluno;
+
+//ERRADO
+
+INSERT INTO `aluno`(`nome`, `dt_nasc`, `CPF`) VALUES 
+    ('[Maria]','[2008-10-02]','[1231234]'),
+        ('[juanito]','[2002-03-02]','[32273425]');
+SELECT * FROM aluno;
+
+//CERTO
+
+INSERT INTO `aluno`(`matricula`,`nome`, `dt_nasc`, `CPF`) VALUES 
+    (NULL, 'Maria','2008-10-02','1231234'),
+        (NULL,'juanito','2002-03-02','32273425');
+/*SELECT * FROM aluno;*/ //Serve para selecionar a tabela e consultar os dados disponiveis nela
+
+
+//////////////////////////////////////////////////////////////////
+
+/*SELECT Com WHERE like*/
+SELECT * FROM aluno; // Aqui cosultamos nossa tabela com o nome aluno
+SELECT * FROM aluno WHERE
+ dt_nasc => "2004-01-01"
+ AND dt_nasc <= "2005-12-31"// aqui é como se fosse um if filtrando as datas e meses que ficam entre os comparativos
+
+/*FUNÇÕES DE AGREGACAO
+// Ou select com where
+
+sintaxe dentro do maria BD
+
+SELECT * FROM `aluno` WHERE `nome` < '2005-01-01' AND `dt_nasc` > '2004-01-01';
+
+/*funções de agregação
+media
+minimo
+maximo
+COUNT
+soma*/
+
+SELECT nome FROM `aluno`;
+
+
+//nosso where funciona como se fosse um if devemos ter cuidado ao escrever essa condição pois a sintaxe é complicada;
+
+
+
+
