@@ -7,7 +7,7 @@
     <title>Cadastro do Usuário - Tarefas Diárias</title>
 </head>
 <body>
-    <form action="resposta.php" method="post"> 
+    <form action="resposta.php" method="post">
         Digite sua três notas <br> <br>
         1° trimestre <br>
         <input type="" name="num1" id = "num1"><br> <br>

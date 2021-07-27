@@ -1,10 +1,11 @@
 <?php
-$servidor = "localhost";
+$servidor = "localhost:3306";
 $senha    = "";
 $usuario  = "root";
 $banco    = "db_calendario";
 
 $con = mysqli_connect($servidor,$usuario, $senha, $banco);
+mysql_set_charset($con,'utf8');
 //check conection
 if (mysqli_connect_errno())
     {
