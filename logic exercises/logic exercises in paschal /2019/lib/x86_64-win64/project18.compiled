@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.0.4\bin\x86_64-win64\fpc.exe" Date="1313017496"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq &quot;-FiC:\Users\Aluno-2019\Documents\CPM - 2IC - 08 - GENYSON\Lazarus\lib\x86_64-win64&quot; &quot;-FuC:\Users\Aluno-2019\Documents\CPM - 2IC - 08 - GENYSON\Lazarus\&quot; &quot;-FUC:\Users\Aluno-2019\Documents\CPM - 2IC - 08 - GENYSON\Lazarus\lib\x86_64-win64\&quot; &quot;-FEC:\Users\Aluno-2019\Documents\CPM - 2IC - 08 - GENYSON\Lazarus\&quot; &quot;-oC:\Users\Aluno-2019\Documents\CPM - 2IC - 08 - GENYSON\Lazarus\project18.exe&quot; project18.lpr"/>
+</CONFIG>

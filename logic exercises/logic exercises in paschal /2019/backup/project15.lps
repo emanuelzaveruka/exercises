@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="project15.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="18"/>
+        <CursorPos X="39" Y="38"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="6" Column="38"/>
+      </Position1>
+      <Position2>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="3" Column="13"/>
+      </Position2>
+      <Position3>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="4" Column="40"/>
+      </Position3>
+      <Position4>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="8" Column="17"/>
+      </Position4>
+      <Position5>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="20" Column="17" TopLine="4"/>
+      </Position5>
+      <Position6>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="7" Column="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="15" Column="21"/>
+      </Position7>
+      <Position8>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="35" Column="18" TopLine="12"/>
+      </Position8>
+      <Position9>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="38" Column="18" TopLine="18"/>
+      </Position9>
+      <Position10>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="40" Column="18" TopLine="18"/>
+      </Position10>
+      <Position11>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="33" Column="27" TopLine="18"/>
+      </Position11>
+      <Position12>
+        <Filename Value="project15.lpr"/>
+        <Caret Line="37" Column="27" TopLine="18"/>
+      </Position12>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

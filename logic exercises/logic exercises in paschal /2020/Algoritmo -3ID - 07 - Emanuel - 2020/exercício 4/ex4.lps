@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="ex4.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="35"/>
+        <CursorPos X="71" Y="50"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="ex4.lpr"/>
+        <Caret Line="53" Column="27" TopLine="20"/>
+      </Position1>
+      <Position2>
+        <Filename Value="ex4.lpr"/>
+        <Caret Line="48" Column="8" TopLine="26"/>
+      </Position2>
+      <Position3>
+        <Filename Value="ex4.lpr"/>
+        <Caret Line="49" Column="15" TopLine="28"/>
+      </Position3>
+      <Position4>
+        <Filename Value="ex4.lpr"/>
+        <Caret Line="56" Column="19" TopLine="31"/>
+      </Position4>
+      <Position5>
+        <Filename Value="ex4.lpr"/>
+        <Caret Line="51" Column="12" TopLine="25"/>
+      </Position5>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
