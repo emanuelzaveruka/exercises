@@ -1,0 +1,2 @@
+module biteBancoEncapsulado {
+}
