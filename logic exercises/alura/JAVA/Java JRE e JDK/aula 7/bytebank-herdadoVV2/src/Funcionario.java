@@ -1,13 +1,12 @@
-//abstract faz da classe uma abstração de algo
-//nao se pode intanciar = criar objeto dessa classe
-//pq ela é abstrata
-public abstract class Funcionario {
 
+//nao pode instanciar dessa classe, pq é abstrata
+public abstract class Funcionario {
+	
 	private String nome;
 	private String cpf;
-	protected double salario; //protected deixa os atributos visiveis as classes filhos
+	private double salario;
 	
-	//metodo torna-se abstrato e não é necessario implementa-lo
+	//metodo sem corpo, nao há implementacao
 	public abstract double getBonificacao();
 	
 	public String getNome() {
@@ -28,7 +27,8 @@ public abstract class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
+	
+	
 
-	
-	
 }
