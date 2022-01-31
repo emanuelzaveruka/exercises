@@ -43,50 +43,24 @@ public class Program {
 		System.out.println("Enter the employee id that will have salary increase : ");
 		int idsalary = sc.nextInt();
 		
-		Integer pos = position(list, idsalary);
+		Employee emp = list.stream().filter(x -> x.getId() == idsalary).findFirst().orElse(null);
 		
-		if (pos == -1) {
+		if (emp == null) {
 			System.out.println("This id does not exist!");
 		}else {
 			System.out.println("Enter the percentage");
 			double percent = sc.nextDouble();
-			list.get(pos).increaseSalary(percent);
+			emp.increaseSalary(percent);
 		}
 		
 		System.out.println();
 		System.out.println("List out employes");
 		
-		for (Employee emp : list) {
+		for (Employee e : list) {
 			System.out.println(emp);
 		}
 		
 		sc.close();
 	}
-	
-	public static int position(List<Employee> list, int id) {
-		for (int i = 0; i < list.size(); i++){
-			 if (list.get(i).getId() == id) {
-				 return i;
-			 }
-		 }
-		return -1;
-	}
-	
-	
-	
-	//
-	//Uma outra forma de retornar os valores em nossa função
-	//É usando o tipo primitivo int
-	//
-	/*	
-	public int hasId(List<Employee> list, int id) {
-		 (int i = 0; i < list.size(); i++){
-			 if (list.get(i).getId() == id) {
-				 return i;
-			 }
-			return -1;
-		 }
-	}
-	*/
 	
 }
