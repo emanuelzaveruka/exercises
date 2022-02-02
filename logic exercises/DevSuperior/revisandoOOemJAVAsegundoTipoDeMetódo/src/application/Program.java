@@ -47,8 +47,9 @@ public class Program {
 		
 		if (emp == null) {
 			System.out.println("This id does not exist!");
-		}else {
-			System.out.println("Enter the percentage");
+		}
+		else {
+			System.out.print("Enter the percentage: ");
 			double percent = sc.nextDouble();
 			emp.increaseSalary(percent);
 		}
@@ -63,4 +64,8 @@ public class Program {
 		sc.close();
 	}
 	
+	public static boolean hasId(List<Employee> list, int id) {
+		Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+		return emp != null;
+	}
 }
