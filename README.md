@@ -1,1 +1,1 @@
-Helo! I'm a programming student and I created this repository to expose my learning exercises and understand how git hub works. The exercises are without context and with few comments but if you want to cooperate with tips feel free
+Repo of my exercises it's without of context :P
