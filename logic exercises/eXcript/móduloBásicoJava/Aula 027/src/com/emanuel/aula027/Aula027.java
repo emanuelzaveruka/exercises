@@ -9,6 +9,11 @@ public class Aula027{
 		do {
 			System.out.println(i);
 			++i;
-		}while(i<=10);
+		}while(i<=9);
+		
+		while(i>=0) {
+			System.out.println(i);
+			--i;
+		}
 	}
 }
