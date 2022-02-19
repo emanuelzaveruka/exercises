@@ -1,13 +1,29 @@
 package com.emanuel.aula037;
-//laço de repetição for |||
+//instrução break
 public class Aula037{
 
 	public static void main(String[]args) {
-	// ; é uma instrução nula
-	
-	int i = 0;
-	if(i >= 10) {
-		;
-	}
+		/*
+		 * A instrução break é utilizada dentro
+		 * de um looping no momento em que desejamos
+		 * encerrar o looping. Ou seja não precisa que 
+		 * a condição seja finalizada podemos interromper
+		 * o laço caso o break seja chamado
+		 */
+		for (int i = 0; i<10; i++) {
+			System.out.println(i);
+			if (i>=3) {
+				System.out.println(i);
+				break;
+			}
+		}
+		int i = 10;
+		while(i<=100) {
+			i++;
+			if(i>=10) {
+				System.out.println(i);
+				break;
+			}
+		}
 	}
 }
