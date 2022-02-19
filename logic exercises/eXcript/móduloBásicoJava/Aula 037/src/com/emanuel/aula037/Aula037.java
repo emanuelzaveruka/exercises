@@ -25,5 +25,17 @@ public class Aula037{
 				break;
 			}
 		}
+		
+		int dia = 2;
+		switch(dia) {
+		case 1:
+			System.out.println("domingo");
+			break;
+		case 2:
+			System.out.println("segunda");
+			break;
+		}
+		
+		
 	}
 }
