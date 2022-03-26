@@ -1,0 +1,60 @@
+/*
+Tipografia transmite mensagens
+
+-negrito
+-tamanho
+-estilo
+
+---------------------------------
+
+Basic Font Propertis
+
+font-family
+font-weight
+font-style
+font-size
+
+---------------------------------
+
+Font family
+
+Tipo de fonte de um elemento
+Lista de fontes e ordem de prioridade
+Inclui *fallback* font
+
+fallback = se entende como um escape caso algo não de certo
+
+*/
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*font weight*/
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+/*font-variant
+--variações na apresentação da fonte
+
+p{
+    font-variant:small-caps;
+}
+
+font-stretch
+
+Alargamento ou encolhimento da fonte
+aceita palavra chave como: expanded, condesed, normal
+aceita porcetage de 50% a 200%
+
+p{
+    font-stretch: expanded;
+}
+
+
+*/

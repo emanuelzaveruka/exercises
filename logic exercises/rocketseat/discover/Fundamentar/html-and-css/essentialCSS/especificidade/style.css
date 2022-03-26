@@ -1,0 +1,70 @@
+/*
+
+0. Universal selector, combinators e negation pseudo-class (:not ())
+1. Element type selector e pseudo-elements (::before, ::after)
+10. Classes e attribute selectors ([type="radio"])
+100. ID selector
+1000. Inline 
+
+*/
+
+* {
+    color: green;
+}
+
+h1 {
+    border: 1px solid red;
+    margin: 200px;
+    padding: 60px;
+}
+
+
+/*
+EVITAR O USO porém serve para gambiarra
+h1 {
+    border: 1px solid red !important;
+    margin: 200px;
+    padding: 60px;
+}*/
+
+
+/*
+At rules
+
+utiliza @ seguido do indetificador e valor
+
+- @import --icluir css externo
+
+- @media --regras condicionais para dispositivos
+
+- @font-face --fontes externas
+
+- @keyframes --animation
+
+*/
+
+
+/* 
+Funções 
+ 
+-nome seguido de abre e fecha parentesis
+-recebe argumentos
+
+@import url("http://urlaqui.com/styles.css");
+
+{
+    color: rgb(255, 0, 100);
+    widht: calc(100% - 10px);
+}
+
+*/
+
+
+/*
+Vendor Prefixies
+
+--webkit por exemplo
+
+permite que browsers adicioe 'features'
+a fi de color em alguma novidade novidade que no CSS
+*/

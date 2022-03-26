@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    color: aqua;
+    font-size: 60px;
+    background: gray;
+}
+
+#container {
+    width: 200px;
+}
