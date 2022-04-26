@@ -1,14 +1,14 @@
 {
-  "name": "qualque-nome",
-  "version": "1.0.0",
-  "description": "apredendo node",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cfonts": "^2.10.1"
-  }
+    "name": "qualque-nome",
+    "version": "1.0.0",
+    "description": "apredendo node",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cfonts": "^2.10.1"
+    }
 }
