@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<h1> EX 21 </h1>
+<script type="text/javascript">
+	/* Os exercicios seguintes deve cnter o seguinte vetor para resolução
+	var inta = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+	vectb[0] deve deve receber o maior elemento de A que seja inferior a 50
+	( se não houver números inferiores a 50 a resposta deve ser 0) considere que nuna haverá elemnetos negativos em A*/
+
+	function jumpline(){
+		document.write("<br>");
+	};
+	function write(x){
+		document.write(x);
+		jumpline();
+	};
+	
+	var vecta = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+	var vectb = [];
+	var vectc = [];
+
+	for(var i = 0; i < vecta.length; i++){
+		if (vecta[i] < 50){
+			vectc[i] = vecta [i];	
+		};
+		if (vectc[i] === undefined){
+			vectc[i] = 0;
+		}			
+	};
+
+	var bigger = Math.max(...vectc);
+	write(bigger);
+</script>

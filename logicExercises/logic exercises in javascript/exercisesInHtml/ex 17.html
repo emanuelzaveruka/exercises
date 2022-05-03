@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<h1> EX 17 </h1>
+<script type="text/javascript">
+	/* Os exercicios seguintes deve cnter o seguinte vetor para resolução
+	var inta = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+	vectb deve receber a lista dos numeros que estão no indices (posições) de a*/
+
+	function jumpline(){
+		document.write("<br>");
+	};
+	function write(x){
+		document.write(x);
+		jumpline();
+	};
+	
+	var vecta = [32,45,89,66,12,35,10,96,38,15,13,11,65,81,35,64,16,89,54,19];
+	var vectb = [];
+	var vectc = [];
+	var rest = 0;
+
+	for (i = 0; i <= vecta.length ; i++){
+
+	rest = vecta[i] % 2;
+		
+		if (rest == 0){
+			vectb[i] = vecta[i];
+			vectc[i] = i;
+		};
+	}
+
+	for (i = 0; i <= vectb.length ; i++){
+		var x = vectb[i]
+		if (x >= 1 ){
+		write(vectb[i] + " in to index: " + vectc[i]);
+		}
+	}
+
+</script>
