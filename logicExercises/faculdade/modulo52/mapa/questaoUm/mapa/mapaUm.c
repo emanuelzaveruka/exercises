@@ -2,34 +2,59 @@
 #include <string.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <stdio_ext.h>
 #include <time.h>
 
+struct cadastro{
+    char name[30];
+    char cpf[12];
+    char nameOfVaccine[30];
+    char data[11];
+};
 
-int main(void){
+int op, i=0, j;
+
+int main(){
     setlocale(LC_ALL, "Portuguese");
 
-    time_t mytime;
-    mytime = time(NULL);
-    struct tm tm = *localtime(&mytime);
+    struct cadastro *cadastro = (struct cadastro *) malloc(1*sizeof(struct cadastro));
+    if(cadastro == NULL){return -1;};
 
-    char name[30], nameOfVaccine[30];
-    int cpf = 0;
-    int lote, date;
-  
+    do{
+        
+    
     printf("Digite o seu nome: ");
-    fgets(name, 30, stdin);
-
+    fgets(cadastro[i].name, 50, stdin);
+   
     printf("Digite o seu cpf: ");
-    scanf("%d", &cpf);
+    fgets(cadastro[i].cpf, 12, stdin);
 
-    printf("Digite o nome da vacina: ");
-    fgets(nameOfVaccine, 30, stdin);
+    printf("Digite o nome da vacina:");
+    fgets(cadastro[i].nameOfVaccine, 30, stdin);
 
-    printf("\n Nome: %s", name);
-    printf("\n CPF: %d", cpf);
-    printf("\n Vacina: %s", nameOfVaccine);
-    printf("\n Data: %d/%d/%d/", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
-    printf("\n Numero do Lote: %d ", rand() % 1000000);
-    printf("\n");
+    
+
+    i++;
+
+    cadastro = (struct cadastro *) realloc(cadastro, (i + 1) * sizeof(struct cadastro));
+    if(cadastro == NULL){ return -1;};
+    
+    printf("continuar? 0-nao, 1-sim: ");
+    scanf("%d", &op);
+    getc(stdin);
+        
+    }while(op);
+
+    for (i; j<i; j++){
+    printf(" Código: %d \n", j);
+    printf(" Nome: %s", cadastro[j].name);
+    printf(" Vacina: %s", cadastro[j].nameOfVaccine);
+    printf(" CPF: %s", cadastro[j].cpf);
+    printf("======================================= \n");
+    }
+
+
+    fflush(stdin);
+    free(cadastro);
     return 0;
 }

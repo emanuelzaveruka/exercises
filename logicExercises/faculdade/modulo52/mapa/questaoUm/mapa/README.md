@@ -33,3 +33,9 @@ Utilize os mais variados recursos aprendidos na disciplina. Seja criativo, não 
 Logo após envie o código em C.
 
 A sua atividade MAPA deve ser entregue em um arquivo de código fonte para linguagem C (extensão .c).
+
+[x] Pegar dados do input
+[x] Realizar serie de entradas
+[]Tratar entradas do usuário como datas e CPF
+[]buscar cpf no vetor
+[] Realizar menu
