@@ -1,0 +1,40 @@
+Algoritmo "MAPADOIS"
+
+Var
+   mediaDaAeronavePorKm: real
+   capacidadeMaximaDoTanque: real
+   quantidadeDoCombustivel: real
+   quatidadeDeKmDotrajetoPlanejado:real
+   quantidadeDeKmDoTrajetoAlternativo: real
+   combustivelNecessarioSemMargem:real
+   combustivelComMargem: real
+
+Inicio
+
+      Escreval("informe a media de litros por kilometro")
+      leia(mediaDaAeronavePorKm)
+
+      escreval("informe a quantidade limite do tanque de combustivel")
+      leia(capacidadeMaximaDoTanque)
+
+      escreval("informe a quantidade de combustivel já no tanque da aeronave")
+      leia(quantidadeDoCombustivel)
+
+      escreval("Informe em quilometros o trajeto planejado")
+      leia(quatidadeDeKmDotrajetoPlanejado)
+
+      escreval("Informe em quilometros o trajeto alternativo")
+      leia(quantidadeDeKmDoTrajetoAlternativo)
+
+      combustivelNecessarioSemMargem <- (quatidadeDeKmDotrajetoPlanejado + quantidadeDeKmDoTrajetoAlternativo) * mediaDaAeronavePorKm
+      combustivelComMargem <-  combustivelNecessarioSemMargem * 1.30
+
+      se(combustivelComMargem > capacidadeMaximaDoTanque) então
+      escreval("Voo Reprovado, reveja seu planejamento")
+      senão
+      escreval("Voo Aprovado, bom voo!")
+      Fimse
+      
+      escreval("necessario abastecer essa quatidade",combustivelComMargem - quantidadeDoCombustivel)
+
+Fimalgoritmo

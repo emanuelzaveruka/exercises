@@ -37,5 +37,5 @@ A sua atividade MAPA deve ser entregue em um arquivo de código fonte para lingu
 [x] Pegar dados do input
 [x] Realizar serie de entradas
 []Tratar entradas do usuário como datas e CPF
-[]buscar cpf no vetor
-[] Realizar menu
+[x]buscar cpf no vetor
+[x] Realizar menu
