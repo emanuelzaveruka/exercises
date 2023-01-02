@@ -1,6 +1,6 @@
-package Programa;
+package entities;
 
-import utilitario.Utils;
+import model.Utils;
 
 public class Account {
 

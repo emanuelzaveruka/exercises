@@ -1,67 +1,20 @@
-package Programa;
+package model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import entities.Account;
+import entities.Client;
+
 import java.util.Scanner;
 
-public class BankAgency {
+import static controller.Operations.operations;
+import static view.BankAgency.accountBanks;
+
+public class Handler {
 
     static Scanner scanner = new Scanner(System.in);
-
-    static ArrayList<Account> accountBanks;
-
-    public static void main(String[]args){
-        accountBanks = new ArrayList<Account>();
-
-        operations();
-    }
-
-    public static void operations(){
-        System.out.println("------------------------------------------------------");
-        System.out.println("-------------Welcome a our agency---------------");
-        System.out.println("------------------------------------------------------");
-        System.out.println("***** Select the operation *****");
-        System.out.println("------------------------------------------------------");
-        System.out.println("|   Opção 1 - Crate account   |");
-        System.out.println("|   Opção 2 - Deposit         |");
-        System.out.println("|   Opção 3 - To WithDraw     |");
-        System.out.println("|   Opção 4 - Transfer        |");
-        System.out.println("|   Opção 5 - List            |");
-        System.out.println("|   Opção 6 - Exit            |");
-
-        int operation = scanner.nextInt();
-
-        switch (operation){
-            case 1:
-                createAccount();
-                break;
-            case 2:
-                deposit();
-                break;
-            case 3:
-                toWithdraw();
-                break;
-            case 4:
-                transfer();
-                break;
-            case 5:
-                listAccounts();
-                break;
-            case 6:
-                System.out.println("thanks for use our system");
-                System.exit(0);
-                break;
-            default:
-                System.out.println("Invalid option");
-                operations();
-                break;
-        }
-
-    }
-
     public static void createAccount(){
         System.out.println("\nName: ");
         clearBuffer(scanner);
+
         String name = scanner.nextLine();
 
         System.out.println("\nCPF: ");

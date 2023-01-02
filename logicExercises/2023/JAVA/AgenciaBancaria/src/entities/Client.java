@@ -1,4 +1,4 @@
-package Programa;
+package entities;
 
 public class Client {
 
