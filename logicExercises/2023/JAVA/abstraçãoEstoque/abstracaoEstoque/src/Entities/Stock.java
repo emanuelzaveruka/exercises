@@ -1,4 +1,4 @@
-package entities;
+package Entities;
 
 import java.util.Date;
 
@@ -14,7 +14,11 @@ public class Stock {
 
     private Date lastStovkMoviment;
 
-    private String responsable;
+    private Employee responsable;
+
+    public Stock(Employee responsable) {
+        this.responsable = responsable;
+    }
 
     public Integer getMAXSTORAGE() {
         return MAXSTORAGE;
@@ -48,11 +52,11 @@ public class Stock {
         this.lastStovkMoviment = lastStovkMoviment;
     }
 
-    public String getResponsable() {
+    public Employee getResponsable() {
         return responsable;
     }
 
-    public void setResponsable(String responsable) {
+    public void setResponsable(Employee responsable) {
         this.responsable = responsable;
     }
 }
