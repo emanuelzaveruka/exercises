@@ -16,8 +16,18 @@ public class Stock {
 
     private Employee responsable;
 
-    public Stock(Employee responsable) {
-        this.responsable = responsable;
+    public Stock(Integer MAXSTORAGE, String establishment, Integer CURRENTSTORAGE, Date lastStovkMoviment) {
+        this.MAXSTORAGE = MAXSTORAGE;
+        this.establishment = establishment;
+        this.CURRENTSTORAGE = CURRENTSTORAGE;
+        this.lastStovkMoviment = lastStovkMoviment;
+    }
+
+    public String toString(){
+        return "\n name establishment " + this.getEstablishment() +
+                "\n Max of stock " + this.getMAXSTORAGE() +
+                "\n current storage " + this.getCURRENTSTORAGE() +
+                "\n last stock moviment " + this.getLastStovkMoviment();
     }
 
     public Integer getMAXSTORAGE() {
