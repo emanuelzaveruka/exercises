@@ -9,29 +9,14 @@ import java.util.Scanner;
 public class StockModel {
 
     static Scanner scanner = new Scanner(System.in);
-    public static void createStock(){
-
-        System.out.println("name of establishment");
-        String nameOfEstablishment = scanner.nextLine();
-
-        System.out.println("Set the max storage of stock");
-        Integer MAXSTORAGE = scanner.nextInt();
-
-        /*Set inicial balance stock*/
-        Integer CURRENTSTORAGE = 0;
-
-        Date lastStockMoviment = new Date();
-        lastStockMoviment.getTime();
-
-        Stock stock = new Stock(MAXSTORAGE, nameOfEstablishment, CURRENTSTORAGE, lastStockMoviment);
-
-        System.out.println(stock.toString());
-    }
-
-    public void movimentStock(Integer value){
+    public void movimentStock(Stock stock){
+        System.out.println("Type value integer for add current stock");
+        Integer value = scanner.nextInt();
 
         if (value > 0 && value != 0){
-
+        int test = stock.getCURRENTSTORAGE();
+        value += test;
+        stock.setCURRENTSTORAGE(value);
         }
     }
 
