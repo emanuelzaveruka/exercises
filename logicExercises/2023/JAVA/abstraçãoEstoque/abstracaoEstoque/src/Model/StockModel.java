@@ -1,9 +1,5 @@
 package Model;
 
-import Entities.Employee;
-import Entities.Stock;
-
-import java.util.Date;
 import java.util.Scanner;
 
 public class StockModel {

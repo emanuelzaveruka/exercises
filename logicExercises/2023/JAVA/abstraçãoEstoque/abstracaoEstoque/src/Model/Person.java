@@ -1,13 +1,12 @@
-package Entities;
+package Model;
 
-public class Employee {
+public abstract class Person {
     private String name;
 
     private String function;
 
-    public Employee(String name, String function) {
+    public Person(String name) {
         this.name = name;
-        this.function = function;
     }
 
     public String getName() {

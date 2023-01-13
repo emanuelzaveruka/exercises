@@ -1,35 +1,22 @@
-package Entities;
+package Model;
 
 import java.util.Date;
 
 public class Stock {
-
     private Integer MAXSTORAGE;
-
     private Integer ID;
-
     private String establishment;
-
     private Integer CURRENTSTORAGE;
-
     private Date lastStovkMoviment;
 
-    private Employee responsable;
 
-    public Stock(Integer MAXSTORAGE, String establishment, Integer CURRENTSTORAGE, Date lastStovkMoviment) {
-        this.MAXSTORAGE = MAXSTORAGE;
+
+
+    /*Constructor*/
+    public Stock(String establishment) {
         this.establishment = establishment;
-        this.CURRENTSTORAGE = CURRENTSTORAGE;
-        this.lastStovkMoviment = lastStovkMoviment;
     }
-
-    public String toString(){
-        return "\n name establishment " + this.getEstablishment() +
-                "\n Max of stock " + this.getMAXSTORAGE() +
-                "\n current storage " + this.getCURRENTSTORAGE() +
-                "\n last stock moviment " + this.getLastStovkMoviment();
-    }
-
+    /*get and sets*/
     public Integer getMAXSTORAGE() {
         return MAXSTORAGE;
     }
@@ -62,11 +49,4 @@ public class Stock {
         this.lastStovkMoviment = lastStovkMoviment;
     }
 
-    public Employee getResponsable() {
-        return responsable;
-    }
-
-    public void setResponsable(Employee responsable) {
-        this.responsable = responsable;
-    }
 }
